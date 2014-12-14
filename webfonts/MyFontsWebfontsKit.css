@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2909823, 2014-10-27T05:16:12-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ScriptinaPro by CheapProFonts
+ * URL: http://www.myfonts.com/fonts/cheapprofonts/scriptina-pro/regular/
+ * Copyright: (c) 1999-2001 Apostrophic Labs. All rights reserved. For more works by the designer visit www.apostrophiclab.com
+ * 
+ * Webfont: TheSerifHandRegular by La Goupil Paris
+ * URL: http://www.myfonts.com/fonts/la-goupil/the-serif-hand/regular/
+ * Copyright: Copyright (c) 2013 by Julien Saurin and Fanny Coulez. All rights reserved.
+ * 
+ * Webfont: NaiveLight by La Goupil Paris
+ * URL: http://www.myfonts.com/fonts/la-goupil/naive/light/
+ * Copyright: Copyright (c) 2013 by Fanny Coulez and Julien Saurin. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2909823
+ * Licensed pageviews: 10,000
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2c667f");
+
+  
+@font-face {font-family: 'ScriptinaPro';src: url('2C667F_0_0.eot');src: url('2C667F_0_0.eot?#iefix') format('embedded-opentype'),url('2C667F_0_0.woff2') format('woff2'),url('2C667F_0_0.woff') format('woff'),url('2C667F_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'TheSerifHandRegular';src: url('2C667F_1_0.eot');src: url('2C667F_1_0.eot?#iefix') format('embedded-opentype'),url('2C667F_1_0.woff2') format('woff2'),url('2C667F_1_0.woff') format('woff'),url('2C667F_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'NaiveLight';src: url('2C667F_2_0.eot');src: url('2C667F_2_0.eot?#iefix') format('embedded-opentype'),url('2C667F_2_0.woff2') format('woff2'),url('2C667F_2_0.woff') format('woff'),url('2C667F_2_0.ttf') format('truetype');}
+ 

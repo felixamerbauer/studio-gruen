@@ -1,0 +1,12 @@
+.NaiveLight {
+    font-family: NaiveLight;
+}
+.ScriptinaPro {
+    font-family: ScriptinaPro;
+}
+
+/* http://stackoverflow.com/questions/20746461/how-do-you-remove-the-default-bootstrap-3-carousel-control-background-gradients */
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
