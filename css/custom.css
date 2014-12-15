@@ -14,3 +14,31 @@
     background-image: none
 }
 
+/* Sticky footer styles
+http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+/* Carousel
+http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows
+*/
+.peopleCarouselImg img {
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+}
