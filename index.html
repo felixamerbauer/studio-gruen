@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,29 +19,33 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
     <!-- JavaScript -->
-    <script src="bower_components/angular/angular.js"/>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Angular App -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-sm-4 NaiveLight">
-            <img class="img-responsive" src="img/logo_klein.jpg"/>
+            <a href="#"><img class="img-responsive" src="img/logo_klein.jpg"/></a>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-4">
             <ul class="NaiveLight">
-                <li class="active"><a href="#">Schwangerschaft <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Baby</a></li>
-                <li><a href="#">Familie</a></li>
-                <li><a href="#">Portrait</a></li>
-                <li><a href="#">Fragen & Antworten</a></li>
-                <li><a href="#">Studio Grün Magazin</a></li>
-                <li><a href="#">Über mich</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Blog</a></li>
+                <li class="active"><a href="#/carousel/schwangerschaft">Schwangerschaft <span class="sr-only">(current)</span></a></li>
+                <li><a href="#/carousel/baby">Baby</a></li>
+                <li><a href="#/carousel/familie">Familie</a></li>
+                <li><a href="#/carousel/portrait">Portrait</a></li>
+                <li><a href="#/static/qa">Fragen & Antworten</a></li>
+                <li><a href="#/static/magazin">Studio Grün Magazin</a></li>
+                <li><a href="#/static/about">Über mich</a></li>
+                <li><a href="#/static/kontakt">Kontakt</a></li>
+                <li><a href="http://studio-gruen.blogspot.com/" target="_blank">Blog</a></li>
             </ul>
             <hr>
             <div class="TheSerifHandRegular">
@@ -62,56 +66,14 @@
                     class="fa fa-twitter"></i></a>
         </div>
 
-        <div class="col-sm-8">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item peopleCarouselImg active">
-                        <img src="img/1.jpg" class="peopleCarouselImg center-block" alt="...">
-
-                        <div class="carousel-caption">
-                            ...
-                        </div>
-                    </div>
-                    <div class="item peopleCarouselImg" >
-                        <img src="img/2.jpg" class="peopleCarouselImg center-block" alt="...">
-
-                        <div class="carousel-caption">
-                            ...
-                        </div>
-                    </div>
-                    <div class="item peopleCarouselImg">
-                        <img src="img/3.jpg" class="peopleCarouselImg center-block" alt="...">
-
-                        <div class="carousel-caption">
-                            ...
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+        <div class="col-sm-8" ng-view>
         </div>
     </div>
 </div>
 <footer class="footer">
     <div class="container">
-        <p class="text-muted">© 2014 Daniela Pock // Studio Grün -  Visual Storytelling for Life // Tel.: <a href="tel:+43 680 5019550">+43 680 5019550</a> // <a href="impressum/" >Impressum</a></p>
+        <p class="text-muted">© 2014 Daniela Pock // Studio Grün - Visual Storytelling for Life // Tel.: <a
+                href="tel:+43 680 5019550">+43 680 5019550</a> // <a href="#/static/impressum">Impressum</a></p>
     </div>
 </footer>
 </body>
