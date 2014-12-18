@@ -37,7 +37,7 @@ body {
 /* Carousel
 http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows
 */
-.peopleCarouselImg img {
+.myCarouselImg  {
     width: auto;
     height: 500px;
     max-height: 500px;
