@@ -13,7 +13,7 @@ app.config(['$routeProvider',
         $routeProvider.
             when('/', {
                 templateUrl: 'partials/carousel.html',
-                controller: 'DummyCtrl'
+                controller: 'MenuCtrl'
             }).
             when('/carousel/:imgId', {
                 templateUrl: 'partials/carousel.html',
@@ -23,31 +23,33 @@ app.config(['$routeProvider',
                 templateUrl: function (urlattr) {
                     return 'partials/' + urlattr.target + '.html';
                 },
-                controller: 'DummyCtrl'
+                controller: 'MenuCtrl'
             }).
             otherwise({
                 redirectTo: ''
             });
     }]);
 
-//app.service('MathService', function () {
-//    this.add = function (a, b) {
-//        return a + b
-//    };
-//
-//    this.subtract = function (a, b) {
-//        return a - b
-//    };
-//
-//    this.multiply = function (a, b) {
-//        return a * b
-//    };
-//
-//    this.divide = function (a, b) {
-//        return a / b
-//    };
-//});
+app.factory('myService', function () {
+    var imageCategories = {
+        'schwangerschaft': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png'],
+        'baby': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png'],
+        'familie': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png'],
+        'portrait': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png']
+    }
+    var categories = [];
+    for (var category in imageCategories) {
+        if (imageCategories.hasOwnProperty(category)) {
+            categories.push(category)
+        }
+    }
 
-//app.service('ImageDataService', function () {
-//    this.imageCategories = ['schwangerschaft', 'baby']
-//});
+    return {
+        getData: function () {
+            return imageCategories;
+        },
+        getCategories: function () {
+            return categories;
+        }
+    };
+});

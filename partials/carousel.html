@@ -1,8 +1,9 @@
-    <carousel interval="0">
-        <slide ng-repeat="picture in pictures" active="slide.active">
-            <img ng-src="{{picture}}" class="myCarouselImg" style="margin:auto;">
-            <div class="carousel-caption">
-                <p>{{$index + 1}}</p>
-            </div>
-        </slide>
-    </carousel>
+<carousel interval="0">
+    <slide ng-repeat="picture in pictures" active="slide.active">
+        <img ng-src="{{picture}}" class="myCarouselImg" style="margin:auto;">
+
+        <div class="carousel-caption">
+            <p>{{$index + 1}}</p>
+        </div>
+    </slide>
+</carousel>
