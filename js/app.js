@@ -36,7 +36,7 @@ app.factory('myService', function () {
         'baby': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png'],
         'familie': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png'],
         'portrait': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png']
-    }
+    };
     var categories = [];
     for (var category in imageCategories) {
         if (imageCategories.hasOwnProperty(category)) {
@@ -45,11 +45,7 @@ app.factory('myService', function () {
     }
 
     return {
-        getData: function () {
-            return imageCategories;
-        },
-        getCategories: function () {
-            return categories;
-        }
+        imageCategories: imageCategories,
+        categories: categories
     };
 });

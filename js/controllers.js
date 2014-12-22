@@ -6,7 +6,7 @@ var controllers = angular.module('controllers', []);
 controllers.controller('MenuCtrl', ['$scope', '$http', 'myService',
     function ($scope, $http, myService) {
         // console.log("MenuCtrl");
-        $scope.categories = myService.getCategories();
+        $scope.categories = myService.categories;
     }]);
 
 controllers.controller('DummyCtrl', [,
@@ -16,6 +16,6 @@ controllers.controller('DummyCtrl', [,
 controllers.controller('CarouselCtrl', ['$scope', '$routeParams', 'myService',
         function ($scope, $routeParams, myService) {
             // console.log("CarouselCtrl");
-            $scope.pictures = myService.getData()[$routeParams.imgId];
+            $scope.pictures = myService.imageCategories[$routeParams.imgId];
         }]
 );
