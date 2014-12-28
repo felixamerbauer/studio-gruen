@@ -4,6 +4,7 @@
 
 var app = angular.module('app', [
     'ngRoute',
+    'pascalprecht.translate',
     'controllers',
     'ui.bootstrap'
 ]);

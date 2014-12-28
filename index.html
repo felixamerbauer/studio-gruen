@@ -21,12 +21,14 @@
     <!-- JavaScript -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- TODO fetch it with bower -->
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
     <!-- Angular App -->
     <script src="js/app.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/controllers.js"></script>
 </head>
 <body>
@@ -47,7 +49,7 @@
                 <li><a href="#/carousel/familie">Familie</a></li>
                 <li><a href="#/carousel/portrait">Portrait</a></li>
                 -->
-                <li><a href="#/static/qa">Fragen & Antworten</a></li>
+                <li><a href="#/static/qa">{{'MENU_QA' | translate}}</a></li>
                 <li><a href="#/static/magazin">Studio Grün Magazin</a></li>
                 <li><a href="#/static/about">Über mich</a></li>
                 <li><a href="#/static/kontakt">Kontakt</a></li>
@@ -60,16 +62,16 @@
                 ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </div>
             <hr>
-            <a class="btn btn-social-icon btn-facebook" target="_blank" href="https://www.facebook.com/studio.gruen"><i
-                    class="fa fa-facebook"></i></a>
-            <a class="btn btn-social-icon btn-flickr" target="_blank" href="https://www.flickr.com/photos/mirhiban"><i
-                    class="fa fa-flickr"></i></a>
-            <a class="btn btn-social-icon btn-instagram" target="_blank" href="http://instagram.com/my.tiny.studio"><i
-                    class="fa fa-instagram"></i></a>
-            <a class="btn btn-social-icon btn-pinterest" target="_blank" href="http://www.pinterest.com/studiogruen/"><i
-                    class="fa fa-pinterest"></i></a>
-            <a class="btn btn-social-icon btn-twitter" target="_blank" href="https://twitter.com/mirhiban"><i
-                    class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-facebook" target="_blank" href="https://www.facebook.com/studio.gruen">
+                <i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-flickr" target="_blank" href="https://www.flickr.com/photos/mirhiban">
+                <i class="fa fa-flickr"></i></a>
+            <a class="btn btn-social-icon btn-instagram" target="_blank" href="http://instagram.com/my.tiny.studio">
+                <i class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-pinterest" target="_blank" href="http://www.pinterest.com/studiogruen/">
+                <i class="fa fa-pinterest"></i></a>
+            <a class="btn btn-social-icon btn-twitter" target="_blank" href="https://twitter.com/mirhiban">
+                <i class="fa fa-twitter"></i></a>
         </div>
 
         <div class="col-sm-8" ng-view>
