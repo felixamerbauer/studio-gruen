@@ -72,6 +72,11 @@
                 <i class="fa fa-pinterest"></i></a>
             <a class="btn btn-social-icon btn-twitter" target="_blank" href="https://twitter.com/mirhiban">
                 <i class="fa fa-twitter"></i></a>
+            <hr>
+            <ul ng-controller="LangCtrl">
+                <li><a href="" ng-click="changeLang('en')">{{'MENU_i18n_en' | translate}}</a></li>
+                <li><a href="" ng-click="changeLang('de')">{{'MENU_i18n_de' | translate}}</a></li>
+            </ul>
         </div>
 
         <div class="col-sm-8" ng-view>
