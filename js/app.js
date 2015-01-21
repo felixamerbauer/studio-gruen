@@ -27,7 +27,7 @@ app.config(['$routeProvider',
                 controller: 'MenuCtrl'
             }).
             otherwise({
-                redirectTo: ''
+                redirectTo: '/static/baby'
             });
     }]);
 
@@ -35,8 +35,8 @@ app.factory('myService', function () {
     var imageCategories = {
         'schwangerschaft': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png'],
         'baby': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png'],
-        'familie': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png', 'img/schwangerschaft4.png']
-        //,'portrait': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png']
+        'familie': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png', 'img/schwangerschaft4.png'],
+        'portrait': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png']
     };
     var categories = [];
     for (var category in imageCategories) {
