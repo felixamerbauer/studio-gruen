@@ -33,10 +33,11 @@ app.config(['$routeProvider',
 
 app.factory('myService', function () {
     var imageCategories = {
-        'schwangerschaft': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png'],
-        'baby': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png'],
-        'familie': ['img/schwangerschaft1.png', 'img/schwangerschaft2.png', 'img/schwangerschaft3.png', 'img/schwangerschaft4.png'],
-        'portrait': ['img/baby1.png', 'img/baby2.png', 'img/baby3.png']
+        'schwangerschaft': ['img/Schwangerschaft_01-Babybauch-Eltern-Paar-Natur-Wien.jpg','img/Schwangerschaft_02-Babybauch-Geschwister-Natur-Wien.jpg','img/Schwangerschaft_03-Babybauch-Natur-Wien.jpg','img/Schwangerschaft_04-Babybauch-Natur-Wien.jpg','img/Schwangerschaft_05-Babybauch-Natur-Wien.jpg','img/Schwangerschaft_06-Babybauch-Natur-Wien.jpg','img/Schwangerschaft_07-Babybauch-Natur-Wien.jpg','img/Schwangerschaft_08-Babybauch-Natur-Wien.jpg','img/Schwangerschaft_09-Babybauch-Natur-Wien.jpg','img/Schwangerschaft_10-Babybauch-Geschwister-Natur-Wien.jpg','img/Schwangerschaft_11-Babybauch-Eltern-Paar-Wien.jpg','img/Schwangerschaft_12-Babybauch-Eltern-Paar-Wien.jpg','img/Schwangerschaft_14-Babybauch-Studio-Kunstfotografie-Wien.jpg'],
+        'baby': ['img/Baby_01-Taufe-Geschwister-Wien.jpg','img/Baby_02-Neugeborenenfotografie-Wien.jpg','img/Baby_03-Neugeborenenfotografie-Wien.jpg','img/Baby_04-Neugeborenenfotografie-Wien.jpg','img/Baby_05-Neugeborenenfotografie-Geschwister-Wien.jpg','img/Baby_06-Neugeborenenfotografie-Wien.jpg','img/Baby_07-Neugeborenenfotografie-Familie-Wien.jpg','img/Baby_08-Neugeborenenfotografie-Wien.jpg','img/Baby_09-Neugeborenenfotografie-Stillen-Wien.jpg','img/Baby_10-Neugeborenenfotografie-Wien.jpg','img/Baby_11-Neugeborenenfotografie-Wien.jpg','img/Baby_12-Babyfotografie-Natur-Wien.jpg','img/Baby_13-Babyfotografie-Natur-Wien.jpg'],
+        'familie': ['img/Familie_01-Familienfotografie-Natur-Mostviertel.jpg','img/Familie_02-Familienfotografie-Natur-Waldviertel.jpg','img/Familie_03-Familienfotografie-Natur-Weinviertel.jpg','img/Familie_04-Familienfotografie-Natur-Wien.jpg','img/Familie_05-Familienfotografie-Natur-Wien.jpg','img/Familie_06-Familienfotografie-Natur-Wien.jpg','img/Familie_07-Familienfotografie-Natur-Niederoesterreich.jpg'],
+        'portrait': ['img/Portrait_01-Styled-Shooting-Jane-Austen-romantisch-Wien.jpg','img/Portrait_02-Styled-Shooting-Jane-Austen-Paar-romantisch-Wien.jpg','img/Portrait_03-Wasser-Sommer-Wien.jpg','img/Portrait_04-Chemotherapie-Linz.jpg','img/Portrait_05_Chemotherapie-Linz.jpg'],
+        'album': ['img/Album_01-Familienfotografie-Wien.jpg','img/Album_02-Familienfotografie-Wien.jpg','img/Album_03-Familienfotografie-Wien.jpg','img/Album_04-Familienfotografie-Wien.jpg','img/Album_05-Familienfotografie-Wien.jpg','img/Album_06-Familienfotografie-Wien.jpg']
     };
     var categories = [];
     for (var category in imageCategories) {
