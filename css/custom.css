@@ -42,3 +42,24 @@ http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different
     height: 500px;
     max-height: 500px;
 }
+
+/* helper */
+.top-buffer { margin-top:20px; }
+
+.Garamond
+{
+    font-family: Garamond;
+    font-size: 120%;
+}
+h4 {
+    color: #346C3B;
+    font-family: NaiveLight, serif;
+}
+h3 {
+    color: #346C3B;
+    font-family: NaiveLight, serif;
+}
+a:link.MainMenu { font-family: NaiveLight, serif; font-size: 150%; color: #346C3B; text-decoration: none; }
+a:visited.MainMenu { font-family: NaiveLight, serif; color: #346C3B; text-decoration: none; }
+a:hover.MainMenu { font-family: NaiveLight, serif; color: #919D93; text-decoration: none; }
+a:active.MainMenu { font-family: NaiveLight, serif; color: #346C3B; text-decoration: none; }
