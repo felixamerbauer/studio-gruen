@@ -4,7 +4,7 @@ angular.module('app').config(function ($translateProvider) {
             MENU_QA: 'Fragen & Antworten',
             MENU_i18n_en: 'Englisch',
             MENU_i18n_de: '> Deutsch',
-            IMG_about: 'img_static/about.jpg',
+            IMG_about: 'img_static/about_de.jpg',
             IMG_contact: 'img_static/contact.jpg'
         });
     $translateProvider.translations('en',
